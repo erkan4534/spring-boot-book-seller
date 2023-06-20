@@ -18,7 +18,7 @@ public class BookController {
 
     @PostMapping //api/book
     public ResponseEntity<?> saveBook(@RequestBody Book book){
-              return new ResponseEntity<>(bookService.saveBook(book), HttpStatus.CREATED);
+        return new ResponseEntity<>(bookService.saveBook(book), HttpStatus.CREATED);
     }
 
     @DeleteMapping("{bookId}")
